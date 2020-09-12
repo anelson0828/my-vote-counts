@@ -41,7 +41,12 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
+            <Link
+              to="/"
+              className="navbar-item"
+              title="Logo"
+              onKeyDown={() => {}}
+            >
               <img src={logo} alt="Vote" style={{ width: '88px' }} />
             </Link>
             {/* Hamburger menu */}
@@ -49,6 +54,9 @@ const Navbar = class extends React.Component {
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
+              onKeyDown={() => {}}
+              role="button"
+              tabIndex={0}
             >
               <span />
               <span />
@@ -60,19 +68,27 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
+              <Link className="navbar-item" to="/about" onKeyDown={() => {}}>
                 About
               </Link>
-              <Link className="navbar-item" to="/voter-checklist">
+              <Link
+                className="navbar-item"
+                to="/voter-checklist"
+                onKeyDown={() => {}}
+              >
                 Voter Checklist
               </Link>
               {/* <Link className="navbar-item" to="/policies">
                 Policies
               </Link> */}
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item" to="/contact" onKeyDown={() => {}}>
                 Contact
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
+              <Link
+                className="navbar-item"
+                to="/contact/examples"
+                onKeyDown={() => {}}
+              >
                 Form Examples
               </Link>
             </div>
@@ -82,6 +98,8 @@ const Navbar = class extends React.Component {
                 href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
                 target="_blank"
                 rel="noopener noreferrer"
+                onKeyDown={() => {}}
+                role="button"
               >
                 <span className="icon">
                   <img src={github} alt="Github" />

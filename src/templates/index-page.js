@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-import Features from '../components/Features';
+// import Features from '../components/Features';
 
 const blue = '#0A2458';
 export const IndexPageTemplate = ({
@@ -85,12 +85,16 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/voter-checklist">
+                    <Link
+                      className="btn"
+                      to="/voter-checklist"
+                      onKeyDown={() => {}}
+                    >
                       Go to Voter Checklist
                     </Link>
                   </div>
                 </div>
-                <div className="columns">
+                {/* <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       {relationalOrganizing.heading}
@@ -98,7 +102,7 @@ export const IndexPageTemplate = ({
                     <div>{relationalOrganizing.description}</div>
                     <Features gridItems={relationalOrganizing.blurbs} />
                   </div>
-                </div>
+                </div> */}
                 {/* <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
@@ -126,11 +130,11 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
-  relationalOrganizing: PropTypes.shape({
-    blurbs: PropTypes.array,
-    heading: PropTypes.string,
-    description: PropTypes.string,
-  }),
+  // relationalOrganizing: PropTypes.shape({
+  //   blurbs: PropTypes.array,
+  //   heading: PropTypes.string,
+  //   description: PropTypes.string,
+  // }),
 };
 
 const IndexPage = ({ data }) => {
@@ -145,7 +149,7 @@ const IndexPage = ({ data }) => {
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
-        relationalOrganizing={frontmatter.relationalOrganizing}
+        // relationalOrganizing={frontmatter.relationalOrganizing}
       />
     </Layout>
   );
@@ -180,20 +184,20 @@ export const pageQuery = graphql`
           description
         }
         description
-        relationalOrganizing {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
+        # relationalOrganizing {
+        #   blurbs {
+        #     image {
+        #       childImageSharp {
+        #         fluid(maxWidth: 240, quality: 64) {
+        #           ...GatsbyImageSharpFluid
+        #         }
+        #       }
+        #     }
+        #     text
+        #   }
+        #   heading
+        #   description
+        # }
       }
     }
   }
