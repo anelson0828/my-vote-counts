@@ -1,16 +1,13 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+title: My Vote Counts
+image: /img/vote.png
+heading: Make a difference
+subheading: Easy, actionable steps to make America really great
 mainpitch:
-  title: Why Kaldi
+  title: Why Vote
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Voting is super super super important
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -18,7 +15,7 @@ description: >-
   anyone.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/biden.png
       text: >
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a
