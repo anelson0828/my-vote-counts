@@ -145,26 +145,24 @@ export const voterChecklistPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        image
-        # {
-        #   childImageSharp {
-        #     fluid(maxWidth: 2048, quality: 100) {
-        #       ...GatsbyImageSharpFluid
-        #     }
-        #   }
-        # }
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         heading
         description
         intro {
           blurbs {
-            image
-            # {
-            #   childImageSharp {
-            #     fluid(maxWidth: 240, quality: 64) {
-            #       ...GatsbyImageSharpFluid
-            #     }
-            #   }
-            # }
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             text
           }
           heading

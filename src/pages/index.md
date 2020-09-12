@@ -2,17 +2,21 @@
 templateKey: index-page
 title: My Vote Counts
 image: /img/vote.png
-heading: Make a difference
-subheading: Easy, actionable steps to make America really great
+heading: Spread the word
+subheading: Use relational organizing to increase voter turnout for Joe Biden
+  against Donald Trump
 mainpitch:
-  title: Why Vote
+  title: Why This Election MATTERS
   description: >
-    Voting is super super super important
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+    This is a confusing election to vote in, with miscommunication and last
+    minute changes happening all the time. Even if you know your contact is a
+    reliable democrat, they still may not have their vote counted due to
+    administrative errors. Having a plan beforehand will ensure their vote
+    counts.
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 intro:
   blurbs:
     - image: /img/biden.png
@@ -43,11 +47,10 @@ intro:
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
   heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+  description:
+    'People WANT to help - you are not pestering them, but giving them
+    an opportunity to feel in control and that they are making a difference.
+    Everybody feels helpless, and this is THE MOST important thing you can do. '
 main:
   heading: Great coffee with no compromises
   description: >
