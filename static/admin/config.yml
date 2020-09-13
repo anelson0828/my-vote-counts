@@ -61,8 +61,8 @@ collections:
             }
           - { label: Description, name: description, widget: string }
           - {
-              label: Relational Organizing,
-              name: relationalOrganizing,
+              label: intro,
+              name: intro,
               widget: object,
               fields:
                 [
