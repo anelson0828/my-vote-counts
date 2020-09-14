@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
-import Features from '../components/Features';
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
+import Checklist from '../components/Checklist';
 
 export const VoterChecklistPageTemplate = ({
   image,
@@ -46,16 +45,8 @@ export const VoterChecklistPageTemplate = ({
           </div>
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <Features gridItems={intro.blurbs} />
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-3">
-                    {main.heading}
-                  </h3>
-                  <p>{main.description}</p>
-                </div>
-              </div>
-              <div className="tile is-ancestor">
+              <Checklist />
+              {/* <div className="tile is-ancestor">
                 <div className="tile is-vertical">
                   <div className="tile">
                     <div className="tile is-parent is-vertical">
@@ -85,7 +76,7 @@ export const VoterChecklistPageTemplate = ({
                       : fullImage
                   })`,
                 }}
-              />
+              /> */}
             </div>
           </div>
         </div>
