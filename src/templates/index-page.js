@@ -93,6 +93,7 @@ export const IndexPageTemplate = ({
                       Go to Voter Checklist
                     </Link>
                   </div>
+                  <div>Did you do it? Yay! Great job! So what’s next?</div>
                 </div>
                 <div className="columns">
                   <div className="column is-12">
