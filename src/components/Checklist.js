@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+const blue = '#0A2458';
 
 const TextInputField = ({ name, label, formRef }) => (
   <div className="field" name={name}>
@@ -23,6 +24,7 @@ const RadioButtons = ({ name, label, formRef, value1, value2 }) => (
         value={value1}
         ref={formRef({ required: true })}
       />
+      {'    '}
       {value1}
     </label>
     <label className="radio" style={{ paddingLeft: '10px' }}>
@@ -33,7 +35,7 @@ const RadioButtons = ({ name, label, formRef, value1, value2 }) => (
         value={value2}
         ref={formRef({ required: true })}
       />
-      {value2}
+      {'    '} {value2}
     </label>
   </div>
 );
@@ -286,9 +288,13 @@ const Checklist = () => {
           </div>
         </div>
       )}
-      <div class="buttons">
-        <button onClick={() => window.print()} class="button is-success">
-          Done! Print to PDF
+      <div class="buttons no-print">
+        <button
+          onClick={() => window.print()}
+          className="button no-print"
+          style={{ background: blue, color: 'white' }}
+        >
+          Done! Save as PDF
         </button>
       </div>
     </form>

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import github from '../img/github-icon.svg';
-import logo from '../img/logo.svg';
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -41,14 +39,6 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link
-              to="/"
-              className="navbar-item"
-              title="Logo"
-              onKeyDown={() => {}}
-            >
-              <img src={logo} alt="Vote" style={{ width: '88px' }} />
-            </Link>
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -68,8 +58,8 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about" onKeyDown={() => {}}>
-                About
+              <Link className="navbar-item" to="/" onKeyDown={() => {}}>
+                Home
               </Link>
               <Link
                 className="navbar-item"
@@ -81,7 +71,7 @@ const Navbar = class extends React.Component {
               {/* <Link className="navbar-item" to="/policies">
                 Policies
               </Link> */}
-              <Link className="navbar-item" to="/contact" onKeyDown={() => {}}>
+              {/* <Link className="navbar-item" to="/contact" onKeyDown={() => {}}>
                 Contact
               </Link>
               <Link
@@ -90,7 +80,7 @@ const Navbar = class extends React.Component {
                 onKeyDown={() => {}}
               >
                 Form Examples
-              </Link>
+              </Link> */}
             </div>
             <div className="navbar-end has-text-centered">
               <a
@@ -100,11 +90,7 @@ const Navbar = class extends React.Component {
                 rel="noopener noreferrer"
                 onKeyDown={() => {}}
                 role="button"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
+              ></a>
             </div>
           </div>
         </div>

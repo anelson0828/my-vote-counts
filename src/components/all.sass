@@ -9,6 +9,18 @@ $black: #2b2523
 .navbar .navbar-menu
   box-shadow:none !important
 
+.no-print
+  @media print
+     display: none !important;
+
+.print-only
+  @media screen
+    display: none
+
+.print-only
+  @media print
+    display: block !important;
+
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -53,14 +65,14 @@ $black: #2b2523
     font-size: 18px
     font-size: 1rem
     line-height: 1.25
-    background-color: #fff
+    background-color: #0A2458
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: #fff
     text-align: center
     -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    box-shadow: inset 0 0 0 2px #0A2458
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -134,3 +146,4 @@ $menu-label-color: $white-ter
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+
