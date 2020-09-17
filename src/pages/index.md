@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: My Vote Counts
-image: /img/vote.png
+image: /img/voted_icons.jpg
 heading: Create your own voting plan
 subheading: Use relational organizing to increase voter turnout for Joe Biden
   against Donald Trump
