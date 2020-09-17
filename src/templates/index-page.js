@@ -69,11 +69,11 @@ export const IndexPageTemplate = ({
               <div className="content">
                 <div className="content">
                   <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      {mainpitch.title}
+                    </h3>
                   </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
+                  <div className="tile">{mainpitch.description}</div>
                 </div>
                 <div className="columns">
                   <div className="column is-12">
@@ -93,8 +93,11 @@ export const IndexPageTemplate = ({
                       Go to Voter Checklist
                     </Link>
                   </div>
-                  <div>Did you do it? Yay! Great job! So what’s next?</div>
                 </div>
+                <div style={{ marginBottom: '40px' }}>
+                  Did you do it? Yay! Great job! So what’s next?
+                </div>
+
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
